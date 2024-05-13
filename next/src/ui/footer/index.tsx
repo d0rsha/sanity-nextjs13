@@ -1,3 +1,4 @@
+// Footer component
 import { getSite } from '@/lib/sanity/queries'
 import Navigation from './Navigation'
 import Social from '@/ui/Social'
@@ -9,6 +10,7 @@ export default async function Footer() {
 		<section className="bg-ink text-center text-canvas">
 			<div className="section py-8">
 				<div className="mx-auto max-w-screen-xl space-y-8">
+					MAKE FOOTER GREAT AGAIN (MFGA).
 					<Navigation />
 					<Social className="justify-center" />
 					<p className="text-sm">

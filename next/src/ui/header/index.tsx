@@ -1,3 +1,4 @@
+// header component.
 import { getSite } from '@/lib/sanity/queries'
 import SkipToContent from '../SkipToContent'
 import Wrapper from './Wrapper'
@@ -25,15 +26,13 @@ export default async function Header() {
 					<Link className="font-bold" href="/">
 						{title}
 					</Link>
+					<span> Här kan man va</span>
 				</div>
-
 				<Navigation />
-
 				<CTAList
 					className="[grid-area:ctas] max-md:*:w-full max-md:header-closed:hidden md:ml-auto"
 					ctas={ctas}
 				/>
-
 				<Toggle />
 			</div>
 		</Wrapper>
