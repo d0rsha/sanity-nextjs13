@@ -1,11 +1,18 @@
+// This is the index page (https://nextjs.org/blog/next-13#layouts)
+// http://localhost:3000/ will route to this component.
 import { fetchSanity, groq } from '@/lib/sanity/fetch'
 import { creativeModuleQuery } from '@/lib/sanity/queries'
 import Modules from '@/ui/modules'
 import processMetadata from '@/lib/processMetadata'
 
 export default async function Page() {
-	const page = await getPage()
-	return <Modules modules={page?.modules} />
+	console.log(
+		'Serverside renderd component. Will show in node console but not in browser console.',
+	)
+
+	return <h1>Hello, AuktionsHuset!</h1>
+	// const page = await getPage()
+	// return <Modules modules={page?.modules} />
 }
 
 export async function generateMetadata() {
